@@ -1,0 +1,176 @@
+Tasks for beginners - all are easy done)
+
+
+a="(5+2)**2-3*2"
+b="6-5/2"
+c="10//4+10%3"
+print("Results are:")
+print (a+  "=", eval(a))
+
+
+a=70>>3
+b=~a
+c=a<<1
+print (a, b,c)
+
+
+a=True
+b=not a
+print (a,b)
+c= a and b
+d= a or b
+print (c,d)
+
+
+x=10
+y=20
+z=x and y
+print(z)
+z= x or y
+print (z)
+print (not x)
+
+mport math as m
+a=abs(5.0)
+b=abs(-5.0)
+c=abs(3+4j)
+d=bin(9)
+f=complex(3,4)
+g=hex(123)
+n = int("123")
+v  =max(-2,6,7,8,9,18,-15)
+u  =pow(2,3, 5)
+s = round (4.668787, 2)
+print (a,b,c,  d,  f , g, n , v, u, s)
+print(m.pi)
+
+
+a= float(input("input first number:"))
+b  =float(input("input second number:"))
+value_1  ="first number more than second"
+value_2 = "second number no less than first"
+res=value_1 if a>b else value_2
+print(res)
+
+
+res = eval(input("input something: "))
+b = type(res)
+if b == int:
+    print("You entered integer number")
+if b==float:
+    print("You entered float number")
+if b!= int and b!=float:
+    print ("That is not  number")'''
+
+
+print ("The sum of numbers")
+n=100
+text="1+2+3+...+"  +str(n)+ "="
+i=1
+s=0
+while i<=n:
+    s=s+i
+    i=i+1
+print (text,s)
+
+
+print ("The sum of numbers")
+n=100
+text="1+2+3+...+"  +str(n)+ "="
+i=1
+s=0
+while True:
+    s+=i
+    i+=1
+    if i>n:
+        break
+print (text,s)
+
+
+
+# The calculation number of points on which divided sides of figure
+n=500
+# distanse betwee n 2 points
+dz=1/n
+#number of points inside plot
+pts=0
+#meaning of indeks of
+i=0
+#counting vertical lines
+while i<=n:
+    x=dz*i
+    j=0
+    while j<=n:
+        y=dz*j
+        if y<=x  and y>=x**2:
+            pts=pts+1
+        j=j+1
+    i=i+1
+s=pts/(n+1)**2
+print('The square og the figure' , s)
+
+
+print ("The sum of numbers")
+n=100
+text="1+2+3+...+"  +str(n)+ "="
+s=0
+for i in range(1,n+1):
+    s=s+i
+print (text,s)
+
+
+# text for cycle
+txt="Python"
+#variable for letters
+i=1
+#cycle
+for s in txt:
+    #making helping text
+ t=str(i)+" -letter: "
+ print (t,s)
+ i=i+1
+print ("Finished")
+
+
+a=float(input("Enter you weight"))
+b= float(input("Enter you height"))
+c=a/b
+if c<18.5:
+    print(" You are Underweight")
+if  18.5 <= c <25:
+    print(" You are NORMAL")
+if  25 <= c <30:
+    print(" You are Overweight")
+if c>30:
+    print(" You are Obesity")
+    
+    
+print ("Search the same elements")
+A=[2,False,9.1,2-1j, 'hello' ,5, 'Python' ]
+B=[5,3,'HELLO',7,12.5,'Python',True,False]
+print ("first list" , A)
+print ("second list" , B)
+print ("the same are: ")
+i=0
+for a in A:
+    i=i+1
+    j=0
+    for b in B:
+        j=j+1
+        if a==b:
+            txt = str(i) +"-element from the  1 list and "
+            txt =txt+ str(j) + "-element from the  2 list i"
+            print (txt)
+print ("finished")
+
+
+Try:
+    a=float(input("input a:"))
+    b=float(input("input b:"))
+    x=b/a
+    print ("The result x=: ", x)
+except ValueError:
+    print("You must enter the NUMBER!")
+except ZeroDivisionError:
+    print("Attention . We can not divede on ZERO")
+print("Thanks - program  -finished.")
